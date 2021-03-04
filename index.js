@@ -27,12 +27,7 @@ async function nextStep() {
   var steps = document.getElementsByClassName('progressbar')[0].getElementsByTagName('li');
     
   for (i = 0; i < numberOfSteps; i++) {
-    console.log(steps);
-    console.log(i);
-    console.log(steps[i]);
     let sleepResponse = await sleep(1000);
-    console.log(sleepResponse);
     let colorStepResponse = await colorStep(sleepResponse, steps[i]);
-    console.log(colorStepResponse);
   }
 }
