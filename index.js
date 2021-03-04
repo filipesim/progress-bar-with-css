@@ -30,7 +30,7 @@ async function nextStep() {
     console.log(steps);
     console.log(i);
     console.log(steps[i]);
-    let sleepResponse = await sleep(5000);
+    let sleepResponse = await sleep(1000);
     console.log(sleepResponse);
     let colorStepResponse = await colorStep(sleepResponse, steps[i]);
     console.log(colorStepResponse);
